@@ -12,7 +12,7 @@ module.exports = {
       'postcss',
       'purgecss',
     ],
-    siteUrl: 'localhost:8000',
+    siteUrl: 'localhost:8000/',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
