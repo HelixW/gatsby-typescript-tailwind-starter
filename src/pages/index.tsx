@@ -16,7 +16,7 @@ const App: React.FC = () => {
 
   return (
     <>
-      <SEO title="Home" image={socialPreview} />
+      <SEO title="Starting Point" image={socialPreview} />
       <header className="flex justify-center items-center my-4">
         <h1 className="container text-4xl text-gray-700 text-center">
           <span>Starter for </span>

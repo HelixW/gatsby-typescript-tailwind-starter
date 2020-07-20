@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Starter',
+    title: 'Gatsby TypeScript Tailwind Starter',
     description:
       'A Starter Template for projects configured with Gatsby + TypeScript + Tailwind',
     author: '@helixw',
