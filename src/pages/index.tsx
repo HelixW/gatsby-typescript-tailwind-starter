@@ -6,7 +6,7 @@ const App: React.FC = () => (
   <>
     <SEO title="Home Page" />
     <header className="flex justify-center items-center my-4">
-      <h1 className="text-4xl text-gray-700">
+      <h1 className="container text-4xl text-gray-700 text-center">
         <span>Starter for </span>
         <a
           href="https://www.gatsbyjs.org/"
@@ -39,10 +39,10 @@ const App: React.FC = () => (
         </a>
       </h1>
     </header>
-    <main className="container px-32 text-gray-700 text-xl">
-      <div className="flex justify-center items-start">
-        <ul className="w-1/2 p-4">
-          <h3 className="font-bold text-2xl">Checklist</h3>
+    <main className="container xl:px-32 text-gray-700 text-xl">
+      <div className="flex flex-col lg:flex-row justify-center items-start">
+        <ul className="lg:w-1/2 p-4">
+          <h3 className="font-bold text-2xl text-gray-600">Checklist</h3>
           <li>
             <span className="uppercase font-bold text-green-700 mr-2">
               [done]
@@ -90,6 +90,13 @@ const App: React.FC = () => (
             <span className="uppercase font-bold text-green-700 mr-2">
               [done]
             </span>
+            <span className="font-bold">SEO</span>
+            <span> set-up</span>
+          </li>
+          <li>
+            <span className="uppercase font-bold text-green-700 mr-2">
+              [done]
+            </span>
             <span className="font-bold">Scripts</span>
             <span> created</span>
           </li>
@@ -114,8 +121,8 @@ const App: React.FC = () => (
             <span>Custom project modifications as per need</span>
           </li>
         </ul>
-        <ul className="w-1/2 p-4">
-          <h3 className="font-bold text-2xl">Instructions</h3>
+        <ul className="lg:w-1/2 p-4">
+          <h3 className="font-bold text-2xl text-gray-600">Instructions</h3>
           <li>
             <span>Modify </span>
             <span className="font-bold">package.json</span>
@@ -139,6 +146,17 @@ const App: React.FC = () => (
             <span> may need modifications.</span>
           </li>
           <li>
+            <span>Instructions for setting up SEO can be found at </span>
+            <a
+              href="https://github.com/HelixW/gatsby-typescript-tailwind-starter/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 underline cursor-pointer"
+            >
+              https://github.com/HelixW/gatsby-typescript-tailwind-starter/issues
+            </a>
+          </li>
+          <li>
             <span>Want a new feature? Request a new feature at </span>
             <a
               href="https://github.com/HelixW/gatsby-typescript-tailwind-starter/issues"
@@ -151,9 +169,11 @@ const App: React.FC = () => (
           </li>
         </ul>
       </div>
-      <h1 className="text-3xl text-center font-bold my-4">
-        &gt;Happy Hacking&lt;
-      </h1>
+      <div className="flex justify-center items-center">
+        <h1 className="text-3xl text-center font-bold my-4 py-8 px-12 sm:px-16 border-4 border-white rounded-lg text-white neon">
+          Happy Hacking
+        </h1>
+      </div>
     </main>
   </>
 )

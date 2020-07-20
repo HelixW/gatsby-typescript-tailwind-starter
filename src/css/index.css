@@ -3,3 +3,42 @@
 @tailwind components;
 
 @tailwind utilities;
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Base styling override */
+
+body {
+  background-color: #070707;
+}
+
+/* Custom Styles */
+.neon {
+  animation: flicker 1.5s infinite alternate;
+}
+
+/* Animate neon flicker */
+@keyframes flicker {
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: -0.2rem -0.2rem 0.5rem #fff, 0.2rem 0.2rem 0.5rem #fff,
+      0 0 1rem #f40, 0 0 2rem #f40, 0 0 3rem #f40, 0 0 4rem #f40, 0 0 5rem #f40;
+
+    box-shadow: 0 0 0.25rem #fff, inset 0 0 0.25rem #fff, 0 0 1rem #08f,
+      inset 0 0 1rem #08f, 0 0 2rem #08f, inset 0 0 2rem #08f;
+  }
+
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+    box-shadow: none;
+  }
+}
