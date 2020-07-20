@@ -12,7 +12,7 @@ module.exports = {
       'postcss',
       'purgecss',
     ],
-    siteUrl: 'localhost:8000/',
+    siteUrl: 'https://gatsby-typescript-tailwind-starter.now.sh/',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

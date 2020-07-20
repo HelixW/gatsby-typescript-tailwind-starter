@@ -7,6 +7,7 @@ interface SEOProps {
   lang?: string
   image?: { src: string; height: string; width: string }
   title: string
+  pathname?: string
 }
 
 const SEO: React.FC<SEOProps> = ({
@@ -14,6 +15,7 @@ const SEO: React.FC<SEOProps> = ({
   lang,
   image: metaImage,
   title,
+  pathname,
 }: SEOProps) => {
   const { site } = useStaticQuery(
     graphql`
@@ -31,11 +33,14 @@ const SEO: React.FC<SEOProps> = ({
     `
   )
 
+  const canonical = pathname
+    ? `${site.siteMetadata.siteUrl}${pathname}`
+    : site.siteMetadata.siteUrl
   const metaDescription: string = description || site.siteMetadata.description
   const image: string =
     metaImage && metaImage.src
       ? `${site.siteMetadata.siteUrl}${metaImage.src}`
-      : `${site.siteMetadata.siteUrl}favicon-32x32.png`
+      : `${site.siteMetadata.siteUrl}icons/icon-512x512.png`
   const metaData: (
     | {
         name: string
@@ -104,6 +109,7 @@ const SEO: React.FC<SEOProps> = ({
       htmlAttributes={{ lang }}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
+      link={canonical ? [{ rel: 'canonical', href: canonical }] : []}
       meta={metaData}
     />
   )
@@ -112,7 +118,8 @@ const SEO: React.FC<SEOProps> = ({
 SEO.defaultProps = {
   lang: 'en',
   description: '',
-  image: { src: '/favicon-32x32.png', height: '32', width: '32' },
+  image: { src: '/icons/icon-512x512.png', height: '512', width: '512' },
+  pathname: '',
 }
 
 export default SEO
