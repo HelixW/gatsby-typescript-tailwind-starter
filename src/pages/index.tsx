@@ -1,7 +1,10 @@
 import * as React from 'react'
 
+import SEO from '../components/seo'
+
 const App: React.FC = () => (
   <>
+    <SEO />
     <header className="flex justify-center items-center my-4">
       <h1 className="text-4xl text-gray-700">
         <span>Starter for </span>
