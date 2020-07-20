@@ -2,7 +2,7 @@ import * as React from 'react'
 import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 
-interface SEOProps {
+interface IProps {
   description?: string
   lang?: string
   image?: { src: string; height: string; width: string }
@@ -10,13 +10,13 @@ interface SEOProps {
   pathname?: string
 }
 
-const SEO: React.FC<SEOProps> = ({
+const SEO: React.FC<IProps> = ({
   description,
   lang,
   image: metaImage,
   title,
   pathname,
-}: SEOProps) => {
+}: IProps) => {
   const { site } = useStaticQuery(
     graphql`
       query {
