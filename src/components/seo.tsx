@@ -65,20 +65,28 @@ const SEO: React.FC<IProps> = ({
       content: 'website',
     },
     {
-      property: 'twitter:creator',
+      name: 'twitter:creator',
       content: site.siteMetadata.author,
     },
     {
-      property: 'twitter:title',
+      name: 'twitter:title',
       content: title,
     },
     {
-      property: 'twitter:description',
+      name: 'twitter:description',
       content: metaDescription,
     },
   ].concat(
     metaImage
       ? [
+          {
+            name: 'twitter:card',
+            content: 'summary_large_image',
+          },
+          {
+            name: 'twitter:image',
+            content: image,
+          },
           {
             property: 'og:image',
             content: image,
@@ -90,10 +98,6 @@ const SEO: React.FC<IProps> = ({
           {
             property: 'og:image:height',
             content: metaImage.height,
-          },
-          {
-            name: 'twitter:card',
-            content: 'summary_large_image',
           },
         ]
       : [
