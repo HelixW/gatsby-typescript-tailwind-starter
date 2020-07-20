@@ -55,7 +55,7 @@ const SEO: React.FC<IProps> = ({
   )[] = [
     { name: 'description', content: metaDescription },
     { name: 'keywords', content: site.siteMetadata.keywords.join(', ') },
-    { property: 'og:title', content: title },
+    { property: 'og:title', content: `${title} | ${site.siteMetadata.title}` },
     {
       property: 'og:description',
       content: metaDescription,
