@@ -4,6 +4,15 @@ module.exports = {
     description:
       'A Starter Template for projects configured with Gatsby + TypeScript + Tailwind',
     author: '@helixw',
+    keywords: [
+      'gatsby',
+      'starter',
+      'typescript',
+      'tailwindcss',
+      'postcss',
+      'purgecss',
+    ],
+    siteUrl: 'https://gatsby-typescript-tailwind-starter.now.sh/',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
