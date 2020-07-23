@@ -70,7 +70,7 @@ const SEO: React.FC<IProps> = ({
     },
     {
       name: 'twitter:title',
-      content: `${title} | ${site.siteMetadata.title}`,
+      content: title,
     },
     {
       name: 'twitter:description',
