@@ -62,21 +62,21 @@ const App: React.FC = () => {
               <span className="font-bold">TypeScript</span>
               <span> and </span>
               <span className="font-bold">TSConfig</span>
-              <span> set-up</span>
+              <span> set up</span>
             </li>
             <li>
               <span className="uppercase font-bold text-green-700 mr-2">
                 [done]
               </span>
               <span className="font-bold">Gatsby Plugins</span>
-              <span> set-up</span>
+              <span> set up</span>
             </li>
             <li>
               <span className="uppercase font-bold text-green-700 mr-2">
                 [done]
               </span>
               <span className="font-bold">ESLint</span>
-              <span> set-up to use </span>
+              <span> set up to use </span>
               <span className="font-bold">Airbnb styleguide</span>
             </li>
             <li>
@@ -84,7 +84,7 @@ const App: React.FC = () => {
                 [done]
               </span>
               <span className="font-bold">TailwindCSS</span>
-              <span> set-up and </span>
+              <span> set up and </span>
               <span className="font-bold">tailwind.config.js</span>
               <span> initialized</span>
             </li>
@@ -93,7 +93,7 @@ const App: React.FC = () => {
                 [done]
               </span>
               <span className="font-bold">Purging</span>
-              <span> set-up with </span>
+              <span> set up with </span>
               <span className="font-bold">PostCSS </span>
               <span> and </span>
               <span className="font-bold">PurgeCSS</span>
@@ -103,7 +103,14 @@ const App: React.FC = () => {
                 [done]
               </span>
               <span className="font-bold">SEO</span>
-              <span> set-up</span>
+              <span> set up</span>
+            </li>
+            <li>
+              <span className="uppercase font-bold text-green-700 mr-2">
+                [done]
+              </span>
+              <span className="font-bold">Google Analytics</span>
+              <span> set up</span>
             </li>
             <li>
               <span className="uppercase font-bold text-green-700 mr-2">
@@ -159,32 +166,49 @@ const App: React.FC = () => {
               <span> may need modifications.</span>
             </li>
             <li>
-              <span>Instructions for setting up SEO can be found at </span>
+              <span className="font-bold">404 Page</span>
+              <span> needs to be set up.</span>
+            </li>
+            <li>
+              <span>
+                Plugin and SEO setup information available in the&nbsp;
+              </span>
               <a
                 href="https://github.com/HelixW/gatsby-typescript-tailwind-starter/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-600 underline cursor-pointer"
               >
-                https://github.com/HelixW/gatsby-typescript-tailwind-starter/
+                README
               </a>
             </li>
             <li>
-              <span>Want a new feature? Request a new feature at </span>
+              <span>Want a new feature? Request a new feature in </span>
               <a
                 href="https://github.com/HelixW/gatsby-typescript-tailwind-starter/issues"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-600 underline cursor-pointer"
               >
-                https://github.com/HelixW/gatsby-typescript-tailwind-starter/issues
+                issues
               </a>
             </li>
           </ul>
         </div>
         <div className="flex justify-center items-center">
-          <h1 className="text-3xl text-center font-bold my-4 py-8 px-12 sm:px-16 border-4 border-white rounded-lg text-white neon">
-            Happy Hacking
+          <h1 className="text-center my-4 sm:mx-16 uppercase text-blue-100 text-2xl sm:text-4xl neon">
+            <span>h</span>
+            <span className="flicker-fast">a</span>
+            <span>p</span>
+            <span>p</span>
+            <span className="mr-4 flicker-slow">y</span>
+            <span>h</span>
+            <span>a</span>
+            <span>c</span>
+            <span>k</span>
+            <span>i</span>
+            <span className="flicker-slow">n</span>
+            <span>g</span>
           </h1>
         </div>
       </main>
