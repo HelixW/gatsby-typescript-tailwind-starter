@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 import SEO from '../components/seo'
-import image from '../images/social-preview.png'
+import SocialPreviewImg from '../images/social-preview.png'
 
 const App: React.FC = () => {
   const socialPreview: {
@@ -9,7 +9,7 @@ const App: React.FC = () => {
     height: string
     width: string
   } = {
-    src: image,
+    src: SocialPreviewImg,
     height: '630',
     width: '1200',
   }
