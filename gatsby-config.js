@@ -12,16 +12,15 @@ module.exports = {
       'postcss',
       'purgecss',
     ],
-    siteUrl: 'https://gatsby-typescript-tailwind-starter.now.sh/',
+    siteUrl: 'https://gatsby-typescript-tailwind-starter.tk/',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://gatsby-typescript-tailwind-starter.now.sh/',
-        sitemap:
-          'https://gatsby-typescript-tailwind-starter.now.sh/sitemap.xml',
+        host: 'https://gatsby-typescript-tailwind-starter.tk/',
+        sitemap: 'https://gatsby-typescript-tailwind-starter.tk/sitemap.xml',
         env: {
           development: {
             policy: [{ userAgent: '*', disallow: ['/'] }],
